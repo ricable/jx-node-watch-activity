@@ -1,0 +1,121 @@
+
+Showing logs for build [32mricable-jx-node-watch-activity-8c6pp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-fdxzc[0m
+{"level":"info","ts":1598512328.181594,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1598512328.1826286,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mricable-jx-node-watch-activity-8c6pp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-s862k[0m
+{"level":"info","ts":1598512329.1723053,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1598512329.1746852,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mricable-jx-node-watch-activity-8c6pp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mricable-jx-node-watch-activity-8c6pp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-ricable-jx-node-watch-activity-8c6pp-bpm5m[0m
+{"level":"info","ts":1598512405.4186056,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1598512406.76531,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/**-node-watch-activity.git @ v1.0.1 in path /workspace/source"}
+
+Showing logs for build [32mricable-jx-node-watch-activity-8c6pp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mricable-jx-node-watch-activity-8c6pp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mricable-jx-node-watch-activity-8c6pp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mricable-jx-node-watch-activity-8c6pp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
+WARNING: failed to find Secret npm-token in namespace **
+
+Showing logs for build [32mricable-jx-node-watch-activity-8c6pp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
+npm WARN REPLACE_ME@1.0.1 No repository field.
+npm WARN REPLACE_ME@1.0.1 No license field.
+
+added 124 packages from 110 contributors and audited 124 packages in 3.864s
+found 7 vulnerabilities (1 low, 1 moderate, 5 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+Showing logs for build [32mricable-jx-node-watch-activity-8c6pp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-test[0m
+
+> REPLACE_ME@1.0.1 test /workspace/source
+> echo "no test specified" && exit 0
+
+no test specified
+
+Showing logs for build [32mricable-jx-node-watch-activity-8c6pp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0030] Resolved base name node:9-slim to node:9-slim 
+[36mINFO[0m[0030] Using dockerignore file: /workspace/source/.dockerignore 
+[36mINFO[0m[0030] Resolved base name node:9-slim to node:9-slim 
+[36mINFO[0m[0030] Retrieving image manifest node:9-slim        
+[36mINFO[0m[0031] Retrieving image manifest node:9-slim        
+[36mINFO[0m[0033] Built cross stage deps: map[]                
+[36mINFO[0m[0033] Retrieving image manifest node:9-slim        
+[36mINFO[0m[0034] Retrieving image manifest node:9-slim        
+[36mINFO[0m[0035] cmd: EXPOSE                                  
+[36mINFO[0m[0035] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0035] Checking for cached layer 10.104.26.101/myproject/cache:1c768a4b980d2099d0e7aa85c9cd50faa8204ce377422fba0eff0edc43abb92e... 
+[36mINFO[0m[0189] No cached layer found for cmd COPY . .       
+[36mINFO[0m[0189] Unpacking rootfs as cmd COPY . . requires it. 
+[36mINFO[0m[0206] Taking snapshot of full filesystem...        
+[36mINFO[0m[0207] Resolving paths                              
+[36mINFO[0m[0208] ENV PORT 8080                                
+[36mINFO[0m[0208] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0208] EXPOSE 8080                                  
+[36mINFO[0m[0208] cmd: EXPOSE                                  
+[36mINFO[0m[0208] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0208] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0208] WORKDIR /usr/src/app                         
+[36mINFO[0m[0208] cmd: workdir                                 
+[36mINFO[0m[0208] Changed working directory to /usr/src/app    
+[36mINFO[0m[0208] Creating directory /usr/src/app              
+[36mINFO[0m[0208] Resolving paths                              
+[36mINFO[0m[0208] Taking snapshot of files...                  
+[36mINFO[0m[0208] COPY . .                                     
+[36mINFO[0m[0209] Resolving paths                              
+[36mINFO[0m[0209] Taking snapshot of files...                  
+[36mINFO[0m[0210] CMD ["npm", "start"]                         
+[36mINFO[0m[0210] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0210] Pushing layer 10.104.26.101/myproject/cache:1c768a4b980d2099d0e7aa85c9cd50faa8204ce377422fba0eff0edc43abb92e to cache now 
+
+Showing logs for build [32mricable-jx-node-watch-activity-8c6pp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Converted /workspace/source/charts/**-node-watch-activity to an unshallow repository
+Generating change log from git ref 628fc4cf1d305b743086dd78be8517872a6a432c => 53ad586a46c0f0e81a213c881225561bcb1c84c2
+Associating user x-0 in users.jenkins.io with email jenkins-x@googlegroups.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit d2f6534e694d600e0e28e289e0ea5098a27c565f with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Finding issues in commit messages using git format
+Associating user x-0 in users.jenkins.io with email jenkins-x@googlegroups.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit 1944c544d67685ce23b2b0d1168fca470f0416ec with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Associating user x-0 in users.jenkins.io with email jenkins-x@googlegroups.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit 1944c544d67685ce23b2b0d1168fca470f0416ec with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+WARNING: No release found for *******/**-node-watch-activity and tag v1.0.1 so creating a new release
+Updated the release information at https://github.com/*******/**-node-watch-activity/releases/tag/v1.0.1
+generated: /workspace/source/charts/**-node-watch-activity/templates/release.yaml
+Created Release **-node-watch-activity-1-0-1 resource in namespace **
+Updating PipelineActivity *******-**-node-watch-activity-master-1 with version 1.0.1
+Updated PipelineActivities *******-**-node-watch-activity-master-1 with release notes URL: https://github.com/*******/**-node-watch-activity/releases/tag/v1.0.1
+
+Showing logs for build [32mricable-jx-node-watch-activity-8c6pp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: bucketrepo http://bucketrepo/bucketrepo/charts/
+Successfully added Helm repository bucketrepo.
+Uploading chart file **-node-watch-activity-1.0.1.tgz to http://bucketrepo/bucketrepo/charts/api/charts
+Received 200 response: 
+
+Showing logs for build [32mricable-jx-node-watch-activity-8c6pp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
+defaulting to the version 1.0.1 from $VERSION
+loading version stream URL https://github.com/jenkins-x/**r-versions.git ref master
+running command: git config --global credential.helper store
+WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
+Promoting app **-node-watch-activity version 1.0.1 to namespace **-staging
+running command: git clone https://github.com/*******/jenkinsx3-gitops-operations.git **-promote-850298989
+Cloning into '**-promote-850298989'...
+cloned ******************************************************.git to /tmp/**-promote-850298989
+created Pull Request ******************************************************/pull/2 from dir /tmp/**-promote-850298989
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*******/jenkinsx3-gitops-operations/pull/2 ref fd9f02dc61fb1ec5aeb1360bb4603cf10149df17 no commit statuses returned for repository *******/jenkinsx3-gitops-operations for PR last commit status of fd9f02dc61fb1ec5aeb1360bb4603cf10149df17
+WARNING: Failed to query the Pull Request last commit status for ******************************************************/pull/2 ref fd9f02dc61fb1ec5aeb1360bb4603cf10149df17 no commit statuses returned for repository *******/jenkinsx3-gitops-operations for PR last commit status of fd9f02dc61fb1ec5aeb1360bb4603cf10149df17
+The build for the Pull Request last commit is currently in progress.
+Pull Request ******************************************************/pull/2 is merged at sha 515a7243ac3690fc989e3960b96e4b86f2c44233
+Pull Request merged but we are not waiting for the update pipeline to complete!
+WARNING: Could not find the service URL in namespace **-staging for names **-node-watch-activity, **-**-node-watch-activity, **-staging-**-node-watch-activity
